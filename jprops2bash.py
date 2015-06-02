@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import collections
 import sys
 
 import jprops
@@ -24,7 +25,7 @@ def value_transform(value):
 
 
 def jprops2bash(fh, key_transform=key_transform, value_transform=value_transform):
-    props_dict = jprops.load_properties(fh)
+    props_dict = jprops.load_properties(fh, collections.OrderedDict)
 
     for key, value in props_dict.items():
         key = key_transform(key)
