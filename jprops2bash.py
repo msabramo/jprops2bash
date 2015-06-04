@@ -30,7 +30,7 @@ def jprops2bash(fh, key_transform=key_transform, value_transform=value_transform
     for key, value in props_dict.items():
         key = key_transform(key)
         value = value_transform(value)
-        yield """{key}='{value}'""".format(key=key, value=value)
+        yield """export {key}='{value}'""".format(key=key, value=value)
 
 
 def main():
