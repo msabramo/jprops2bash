@@ -10,7 +10,7 @@ setup(
     description='Convert Java properties file to bash env var script',
     long_description=long_description,
     keywords='java properties',
-    version='0.0.1',
+    version='0.0.2',
     author='Marc Abramowitz',
     author_email='msabramo@gmail.com',
     install_requires=['setuptools', 'jprops'],
