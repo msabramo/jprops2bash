@@ -4,6 +4,8 @@ from setuptools import setup
 setup(
     name='jprops2bash',
     description='Convert Java properties file to bash env var script',
+    setup_requires=['setuptools-markdown'],
+    long_description_markdown_filename='README.md',
     keywords='java properties',
     version='0.0.0',
     author='Marc Abramowitz',
