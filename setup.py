@@ -7,7 +7,7 @@ setup(
     setup_requires=['setuptools-markdown'],
     long_description_markdown_filename='README.md',
     keywords='java properties',
-    version='0.0.0',
+    version='0.0.1',
     author='Marc Abramowitz',
     author_email='msabramo@gmail.com',
     install_requires=['setuptools', 'jprops'],
