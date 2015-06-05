@@ -1,10 +1,14 @@
-# jprops2bash
+jprops2bash
+===========
 
 Convert Java properties file to bash env var script
 
-## Usage
+Usage
+-----
 
 It reads from stdin and writes to stdout:
+
+::
 
     $ cat > sample.properties
     teamcity.agent.jvm.file.encoding=UTF-8
@@ -32,6 +36,8 @@ It reads from stdin and writes to stdout:
 
 and if you wanted to set environment variables for all of these you
 could do something like the following:
+
+::
 
     $ env | grep TEAM
     $ eval $(jprops2bash < sample.properties)

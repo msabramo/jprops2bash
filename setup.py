@@ -1,11 +1,14 @@
+import os
 from setuptools import setup
 
+here = os.path.dirname(__file__)
+readme_rst = os.path.join(here, 'README.rst')
+long_description = open(readme_rst).read()
 
 setup(
     name='jprops2bash',
     description='Convert Java properties file to bash env var script',
-    setup_requires=['setuptools-markdown'],
-    long_description_markdown_filename='README.md',
+    long_description=long_description,
     keywords='java properties',
     version='0.0.1',
     author='Marc Abramowitz',
